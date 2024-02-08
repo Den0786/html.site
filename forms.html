@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration forms</title>
+    <link rel="stylesheet" href="forms.css">
+    <link rel="icon" type="x-icon" href="image/phone.jpeg">
+    <style>
+        form{
+    text-align: center;
+    background-color: rgb(244, 127, 255);
+    margin: auto;
+    background-color: rgb(226, 43, 217);
+    accent-color: violet;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+a:hover{
+    color: aliceblue;
+}
+h3{
+    text-align: center;
+    color: white;
+}
+
+header{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+}
+img{
+    height: 120px;
+    width: 120px;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PCG Emmanuel Cong. Ahinsan</h1>
+        <img src="image/PCG logo.jpg" alt="a PCG logo" align="middle"><br>
+    </header>
+        
+    <form action="index.php" method="post" enctype="multipart/form-data" target="_blank" autocomplete="on">
+       <h1>Membership forms</h1>
+       <h4>Kindly provide all the required details</h4>
+       <hr>
+    <fieldset>
+       <legend>Personal Info:</legend>
+       <label for="First Name">First Name</label><br>
+       <input type="text" id="First name" placeholder="yyyyyyy" required>
+       <br>
+       <label for="Surname">Surname:</label><br>
+       <input type="text" id="surname" placeholder="vvvvvvv" required>
+       <br>
+       <label for="phone">Phone</label>
+       <br>
+       <input type="phone" id="phone"  placeholder="233-454-765-2876" min="10" max="15" required>
+       <br>
+       <label for="email">Email address:</label>
+       <br>
+       <input type="email" id="email" placeholder="gha@gmail.ccom" required>
+       <br>
+       
+       <label for="B'day">Date of birth:</label>
+       <br>
+       <input type="date" id="B'day" required><br>
+
+       <label for="place">Home Town:</label><br>
+       <input type="town" id="place" required><br> <label for="First name">First Name:</label><br>
+       <input type="text" id="first name" placeholder="xxxxxxxx" required >
+       <br>
+
+       <label for="place">Place of residence:</label><br>
+       <input type="town" id="place" required><br>
+
+       <label for="address">Residential Address:</label><br>
+       <input type="town" id="address" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>Other Info:</legend>
+       <label for="relationship">Marital Status:</label><br>
+       <label for="single">Single:</label>
+       <input type="radio" id="single" value="single" name="relationship">
+       <label for="married">Married:</label>
+       <input type="radio" id="married" value="married" name="relationship"><br>
+
+       <label for="married">Name of Spouse:</label><br>
+       <input type="text" id="married"><br>
+
+       <label for="title">Title:</label><br>
+       <label for="Mr">Mr.</label>
+       <input type="radio" id="Mr." value="Mr." name="title">
+       <label for="Mrs">Mrs.</label>
+       <input type="radio" id="Mrs." value="Mrs." name="title">
+       <label for="Mss">Mss.</label>
+       <input type="radio" id="Mss." value="Mss." name="title">
+       <label for="Rev">Rev.</label>
+       <input type="radio" id="Rev." value="Rev." name="title"><br>
+   
+       <label for="children">num of children:</label><br>
+       <input type="number" id="children" min="0" max="20" value="0"><br>
+
+       <label for="Job">Employment Status:</label><br>
+       <label for="Employed">Employed.</label>
+       <input type="radio" id="Emploed." value="employed." name="Occupation">
+       <label for="S.F">Self Employed.</label>
+       <input type="radio" id="S.F" value="S.f" name="Occupation">
+       <label for="un">Unemployed.</label>
+       <input type="radio" id="un" value="un" name="Occupation"><br>
+
+       <label for="job">Occupation:</label><br>
+       <input type="text" id="job" required><br>
+
+        <label for="group">Service Group:</label><br>
+        <select id="groups" name="groups" multiple>
+            <option value="Church Choir">Church Choir:</option>
+            <option value="singing band">Singing Band:</option>
+            <option value="BSPG">BSPG:</option>
+            <option value="BGG">Boys and Girls Brigade:</option>
+            <option value="divine royals">Divine Royals:</option> 
+            <option value="None" selected>None</option>
+        </select><br>
+
+        <label for="group">Generational Group:</label><br>
+        <input list="g-group" name="g-group">
+        <datalist id="g-group">
+            <option value="C/S">Children Service:</option>
+            <option value="JY">Junior Youth:</option>
+            <option value="YPG">Young People's Guild:</option>
+            <option value="YAF">Young Adult Fellowship:</option>
+            <option value="W/F">Women's Fellowship:</option>
+            <option value="M/F">Mens Fellowship:</option>
+        </datalist><br>
+    </fieldset>
+
+        <label for="file">file:</label><br>
+        <input type="file" id="file" accept="image/png/jpg"><br>
+        <label for="Done">Done</label>
+        <input type="checkbox" id="Done"><br>
+
+        <h4>Add a comment in the comment section below</h4><br>
+        <textarea name="message" style="width: 250px; height: 250px;" ></textarea><br>
+
+        <input type="reset"><br>
+        <h4 style="color: black;"><i>Please make sure that all information provided are accurate</i> </h4>
+       <input type="submit"><br>
+    </form>
+</body>
+</html>
